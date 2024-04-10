@@ -1,6 +1,6 @@
-package projetopessoas;
+package tiposherança;
 
-public class Aluno extends Pessoa {
+public class Aluno extends Pessoa{
     private int matricula;
     private String curso;
 
@@ -20,7 +20,7 @@ public class Aluno extends Pessoa {
         this.curso = curso;
     }
     
-    public void cancMatricula(){
-         
+    public void pagarMensalidade(){
+        System.out.println("Mensalidade paga!");
     }
 }

@@ -1,6 +1,6 @@
-package projetopessoas;
+package tiposherança;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome, sexo;
     private int idade;
 
@@ -28,13 +28,13 @@ public class Pessoa {
         this.idade = idade;
     }
     
-    public void fazerAniversario(){
+    public final void fazerAniversario(){
         this.setIdade(this.getIdade() + 1);
     }
 
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", sexo=" + sexo + ", idade=" + idade + '}';
+        return "Dados{" + "nome=" + nome + ", sexo=" + sexo + ", idade=" + idade + '}';
     }
     
     
